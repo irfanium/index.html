@@ -1,0 +1,45 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Demo</title>
+<meta charset="UTF-8" />
+<style type="text/css">
+body {
+background:#000;
+}
+a {
+color:#000;
+}
+#img-fancybox img {
+border-radius:2px;
+transition:all 0.6s;
+overflow:hidden;
+margin:20px 5px 10px 0px;
+}
+#img-fancybox img:hover {
+-webkit-transform:translateY(-5px) scale(1.1); 
+-moz-transform:translateY(-5px) scale(1.1); 
+transform:translateY(-5px) scale(1.1); 
+box-shadow:0px 0px 25px rgba(255,255,255,0.5);
+}
+.red img {border:3px solid #ff002b;}
+.yellow img {border:3px solid #ffa900;}
+.green img {border:3px solid #00a753;}
+.blue img {border:3px solid #0089fa;}
+</style>
+<script type="text/javascript" src="fancybox/jquery.js"></script>
+<script type="text/javascript" src="fancybox/jquery.fancybox.pack.js"></script>
+<link type="text/css" rel="stylesheet" href="fancybox/jquery.fancybox.css" media="screen" />
+<script type="text/javascript">
+$(document).ready(function() {$('.fancybox').fancybox();});
+</script>
+</head>
+<body>
+<div id="img-fancybox" align="center">
+<a class="fancybox red" href='fancybox/1.jpg' data-fancybox-group="gallery" > <img class="img-polaroid" src='fancybox/1.jpg' width='150' height='150' alt="" /> </a>
+<a class="fancybox yellow" href='fancybox/2.jpg' data-fancybox-group="gallery" > <img class="img-polaroid" src='fancybox/2.jpg' width='150' height='150' alt="" /> </a>
+<a class="fancybox green" href='fancybox/3.jpg' data-fancybox-group="gallery" > <img class="img-polaroid" src='fancybox/3.jpg' width='150' height='150' alt="" /> </a>
+<a class="fancybox blue" href='fancybox/4.jpg' data-fancybox-group="gallery" > <img class="img-polaroid" src='fancybox/4.jpg' width='150' height='150' alt="" /> </a>
+</div>
+</body>
+</html>

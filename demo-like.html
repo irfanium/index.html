@@ -1,0 +1,70 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="UTF-8" />
+<title>Demo</title>
+
+<style type="text/css">
+@import url('bree.css');
+#facelike-container{margin:20px; display:block;}
+#facelike-container{
+	height:310px;
+	width:310px;
+	background:url("demo-like_files/irfancolaps.jpg");
+	overflow:hidden;
+	animation:moveDiagonAlley 15s infinite linear;
+	-moz-animation:moveDiagonAlley 15s infinite linear;
+	-webkit-animation:moveDiagonAlley 15s infinite linear;
+	-o-animation:moveDiagonAlley 15s infinite linear;
+	font-size: 22px;
+	font-family:Bree; "Open Sans";
+  	font-weight: 300;
+	text-shadow:none;
+	-webkit-font-smoothing:antialiased;
+}
+.pagecount,.pageverb,.pagename,.pagelike{ display: block; text-align: center; color:#000000;}
+.pagecount{ font-size: 70px; padding-top: 10px;}
+.pageverb,.pagename{ font-size: 30px; }
+.pagename a { text-decoration:none; color:#0089fa; font-weight:bold;}
+.pagename a:hover {text-decoration:underline;}
+.pagelike {padding-top:20px;}
+.pagelike span{font-size: 23px;}
+.like-button iframe{
+	padding-top:10px;
+	vertical-align: middle;
+}
+@keyframes moveDiagonAlley
+{
+from {background-position:0px 0px;}
+to {background-position:310px 310px;}
+}
+@-moz-keyframes moveDiagonAlley
+{
+from {background-position:0px 0px;}
+to {background-position:310px 310px;}
+}
+@-webkit-keyframes moveDiagonAlley
+{
+from {background-position:0px 0px;}
+to {background-position:310px 310px;}
+}
+@-o-keyframes moveDiagonAlley
+{
+from {background-position:0px 0px;}
+to {background-position:310px 310px;}
+}
+</style>
+</head>
+<body>
+<div id="facelike-container">
+<span class="pagecount">0+</span>
+<span class="pageverb">Orang Menyukai</span>
+<span class="pagename"><a href="http://www.facebook.com/irfanium foil" target="_blank">Irfanium</a></span>
+<div class="pagelike">
+<div class="like-button" align="center">
+<iframe src="demo-like_files/like.htm" style="border:none; overflow:hidden; width:55px; height:25px;"></iframe>
+</div>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,165 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="UTF-8" />
+<title>Demo</title>
+<link href="images/favicon.png" rel="icon" type="image/x-icon">
+<!--
+
+-->
+<!-- Begin Style -->
+<style type="text/css">
+@import url('bree.css');
+
+body {
+font-family:Bree, Arial, sans-serif;
+font-weight:300;
+background:#e51400;
+-webkit-font-smoothing:antialiased;
+-moz-animation: pulsate 55s infinite linear;
+-webkit-animation: pulsate 55s infinite linear;
+animation: pulsate 55s infinite linear;
+}
+/* merah terang - merah tua - pink - ungu - biru tua - teal - biru muda - hijau muda - kuning - oranye - merah terang */
+@-moz-keyframes pulsate {
+0% { background:#e51400; }
+10% { background:#ab1d44; }
+20% { background:#ec008c; }
+30% { background:#92278f; }
+40% { background:#265aa9; }
+50% { background:#00aba9; }
+60% { background:#1ba1e2; }
+70% { background:#00a651; }
+80% { background:#f7941e; }
+90% { background:#fa6800; }
+100% { background:#e51400; }
+}
+
+@-webkit-keyframes pulsate {
+0% { background:#e51400; }
+10% { background:#ab1d44; }
+20% { background:#ec008c; }
+30% { background:#92278f; }
+40% { background:#265aa9; }
+50% { background:#00aba9; }
+60% { background:#1ba1e2; }
+70% { background:#00a651; }
+80% { background:#f7941e; }
+90% { background:#fa6800; }
+100% { background:#e51400; }
+}
+@keyframes pulsate {
+0% { background:#e51400; }
+10% { background:#ab1d44; }
+20% { background:#ec008c; }
+30% { background:#92278f; }
+40% { background:#265aa9; }
+50% { background:#00aba9; }
+60% { background:#1ba1e2; }
+70% { background:#00a651; }
+80% { background:#f7941e; }
+90% { background:#fa6800; }
+100% { background:#e51400; }
+}
+.btn, .btn2, #message, #menu {
+animation: myfirst 1.5s;
+-moz-animation: myfirst 1.5s;
+-webkit-animation: myfirst 1.5s;
+}
+
+@keyframes myfirst
+{
+from{opacity:0;}
+to{opacity:10;}
+}
+@-moz-keyframes myfirst
+{
+from{opacity:0;}
+to{opacity:10;}
+}
+@-webkit-keyframes myfirst
+{
+from{opacity:0;}
+to{opacity:10;}
+}
+
+.btn {
+background: transparent;
+height: 38px;
+line-height: 40px;
+border: 2px solid white;
+display: inline-block;
+text-align: center;
+width: 120px;
+padding: 4px 8px 4px 8px!important;
+font-size: 18px;
+font-family:Bree;
+font-weight:300;
+cursor:pointer!important;
+}
+.btn:hover {
+color: #fff;
+background: rgba(255,255,255,0.3);
+cursor:pointer!important;
+}
+
+.btn2 {
+background: transparent;
+height: 38px;
+line-height: 40px;
+display: inline-block;
+text-align: center;
+width: 120px;
+padding: 4px 8px 4px 8px!important;
+font-size: 25px;
+font-family:Bree;
+}
+.btn, .btn2 {
+transition:all 0.7s;
+}
+a {
+text-decoration:none;
+color:#fff;
+}
+::selection {
+color:#fff;
+background-color:transparent;
+}
+::-moz-selection {
+color:#fff;
+background-color:transparent;
+}
+#back {
+float:left;
+height:40px;
+margin-top:5px;
+margin-bottom:20px;
+color:#fff;
+position:fixed;
+}
+#message {
+font-size:6em;
+font-style:italic;
+color:#fff;
+padding-top:70px;
+text-align:center;
+}
+#menu {
+padding-top:80px;
+}
+</style>
+<!-- End Style -->
+</head>
+<body>
+<div id="container">
+<script type="text/javascript" src="../js/time.js"></script>
+<div align="center">
+<div id="message">Irfan</div>
+<p>&nbsp;</p>
+<div id="menu">
+<a class="btn" onclick="window.open('http://facebook.com/')">Home</a> <a class="btn" onclick="window.open('http://google.com/')">Google</a> <a class="btn" onclick="window.open('http://www.facebook.com/irfanium_foil')">Add Me</a> <a class="btn" onclick="document.location.href='about:blank' ">Exit</a>
+</div>
+</div>
+</div>
+</body>
+</html>
